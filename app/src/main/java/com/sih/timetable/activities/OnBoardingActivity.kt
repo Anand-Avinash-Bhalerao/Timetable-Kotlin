@@ -13,9 +13,9 @@ import com.sih.timetable.R
 import com.sih.timetable.models.LecInfo
 
 
+
+
 class OnBoardingActivity : AppCompatActivity() {
-
-
 
     private lateinit var list: ArrayList<String>
 

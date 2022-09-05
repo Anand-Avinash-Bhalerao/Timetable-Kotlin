@@ -34,6 +34,17 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:id="@+id/iv_admin"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/ic_baseline_admin_panel_settings_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/white" />
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -58,10 +69,10 @@
 
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/civ_image"
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
                     android:layout_marginTop="12dp"
-                    android:layout_marginEnd="12dp"
+                    android:layout_marginEnd="16dp"
                     android:layout_marginBottom="12dp"
                     android:src="@drawable/vegeta"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -69,30 +80,36 @@
 
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <LinearLayout
+                <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="12dp"
-                    android:orientation="vertical"
-                    app:layout_constraintBottom_toBottomOf="@id/civ_image"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/civ_image"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@id/civ_image">
+                    app:layout_constraintTop_toTopOf="parent">
 
                     <TextView
                         android:id="@+id/madeBy"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Developer" />
+                        android:text="Developer"
+                        app:layout_constraintBottom_toTopOf="@id/myName"
+                        app:layout_constraintEnd_toEndOf="@id/myName"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="@id/myName" />
 
 
                     <TextView
+                        android:id="@+id/myName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Lord Anand Bhalerao"
                         android:textColor="@color/app_blue"
-                        android:textSize="24sp" />
-
-                </LinearLayout>
+                        android:textSize="24sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/madeBy" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -117,6 +134,7 @@
                     android:layout_marginTop="24dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
+                    android:fadeScrollbars="false"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
 
@@ -185,7 +203,7 @@
                             android:layout_marginTop="12dp"
                             android:layout_marginEnd="12dp"
                             android:background="@drawable/background_rounded"
-                            android:backgroundTint="@color/light_coral"
+                            android:backgroundTint="@color/light_red"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@id/cl_syllabus">
@@ -229,6 +247,7 @@
                                 app:layout_constraintTop_toTopOf="parent"
                                 app:tint="@color/maroon" />
                         </androidx.constraintlayout.widget.ConstraintLayout>
+
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:id="@+id/cl_prn"
                             android:layout_width="match_parent"
@@ -275,11 +294,64 @@
                                 android:layout_height="40dp"
                                 android:layout_marginEnd="24dp"
                                 android:background="@android:color/transparent"
-                                android:src="@drawable/prn"
+                                android:src="@drawable/list"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintTop_toTopOf="parent"
                                 app:tint="@color/orange" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/cl_github"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:background="@drawable/background_rounded"
+                            android:backgroundTint="@color/light_grey"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/cl_prn">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="24dp"
+                                android:background="@android:color/transparent"
+                                android:orientation="vertical"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@android:color/transparent"
+                                    android:text="Github Code"
+                                    android:textColor="@color/black"
+                                    android:textSize="24sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@android:color/transparent"
+                                    android:text="Code of this app"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_marginEnd="24dp"
+                                android:background="@android:color/transparent"
+                                android:src="@drawable/github"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:tint="@color/black" />
                         </androidx.constraintlayout.widget.ConstraintLayout>
 
                     </androidx.constraintlayout.widget.ConstraintLayout>

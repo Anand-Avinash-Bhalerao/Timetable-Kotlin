@@ -3,16 +3,23 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidDev/KOTLIN/Timetable/app/src/main/res/drawable-v24/background_rounded_night.xml" value="0.2045" />
         <entry key="..\:/AndroidDev/KOTLIN/Timetable/app/src/main/res/drawable-v24/bg_rounded.xml" value="0.2045" />
+        <entry key="..\:/AndroidDev/KOTLIN/Timetable/app/src/main/res/drawable-v24/button_background.xml" value="0.2045" />
+        <entry key="..\:/AndroidDev/KOTLIN/Timetable/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2045" />
         <entry key="..\:/AndroidDev/KOTLIN/Timetable/app/src/main/res/drawable/background_rounded.xml" value="0.2045" />
+        <entry key="..\:/AndroidDev/KOTLIN/Timetable/app/src/main/res/drawable/ic_baseline_link_24.xml" value="0.2045" />
+        <entry key="..\:/AndroidDev/KOTLIN/Timetable/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2045" />
+        <entry key="..\:/AndroidDev/KOTLIN/Timetable/app/src/main/res/drawable/list.xml" value="0.2045" />
         <entry key="..\:/AndroidDev/KOTLIN/Timetable/app/src/main/res/drawable/time_recy_item.xml" value="0.2045" />
         <entry key="..\:/AndroidDev/KOTLIN/Timetable/app/src/main/res/layout/activity_main.xml" value="0.152" />
         <entry key="..\:/AndroidDev/KOTLIN/Timetable/app/src/main/res/layout/activity_on_boarding.xml" value="0.20520833333333333" />
         <entry key="..\:/AndroidDev/KOTLIN/Timetable/app/src/main/res/layout/break_item.xml" value="0.4" />
         <entry key="..\:/AndroidDev/KOTLIN/Timetable/app/src/main/res/layout/break_lec_recy_item.xml" value="0.264" />
+        <entry key="..\:/AndroidDev/KOTLIN/Timetable/app/src/main/res/layout/dialog_admin_login.xml" value="0.264" />
         <entry key="..\:/AndroidDev/KOTLIN/Timetable/app/src/main/res/layout/fragment_food.xml" value="0.152" />
         <entry key="..\:/AndroidDev/KOTLIN/Timetable/app/src/main/res/layout/fragment_home.xml" value="0.4" />
-        <entry key="..\:/AndroidDev/KOTLIN/Timetable/app/src/main/res/layout/fragment_links.xml" value="0.4" />
+        <entry key="..\:/AndroidDev/KOTLIN/Timetable/app/src/main/res/layout/fragment_links.xml" value="0.264" />
         <entry key="..\:/AndroidDev/KOTLIN/Timetable/app/src/main/res/layout/fragment_timetable.xml" value="0.136" />
         <entry key="..\:/AndroidDev/KOTLIN/Timetable/app/src/main/res/layout/free_lec_recy_item.xml" value="0.20520833333333333" />
         <entry key="..\:/AndroidDev/KOTLIN/Timetable/app/src/main/res/layout/item_free_recy.xml" value="0.20416666666666666" />
