@@ -1,9 +1,9 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.Timetable" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.Timetable" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorPrimary">@color/app_blue</item>
+        <item name="colorPrimaryVariant">@color/grey_top</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
@@ -13,4 +13,25 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="Primary">
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="Secondary">
+        <item name="android:textColor">@color/grey</item>
+    </style>
+
+    <style name="Background">
+        <item name="android:background">@color/background</item>
+    </style>
+
+    <style name="BackgroundLine">
+        <item name="android:background">@color/light_grey</item>
+    </style>
+    <style name="RoundedBackground">
+        <item name="android:background">@drawable/background_rounded</item>
+        <item name="android:backgroundTint">@color/white</item>
+    </style>
+
+
 </resources>

@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Timetable</string>
+    <string name="title_home">Home</string>
+    <string name="title_timetable">TT</string>
+    <string name="title_khana">Khana</string>
+    <string name="title_links">Links</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
