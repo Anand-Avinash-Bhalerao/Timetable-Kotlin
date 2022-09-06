@@ -15,12 +15,13 @@
         <entry key="..\:/AndroidDev/KOTLIN/Timetable/app/src/main/res/layout/activity_admin.xml" value="0.2" />
         <entry key="..\:/AndroidDev/KOTLIN/Timetable/app/src/main/res/layout/activity_main.xml" value="0.152" />
         <entry key="..\:/AndroidDev/KOTLIN/Timetable/app/src/main/res/layout/activity_on_boarding.xml" value="0.20520833333333333" />
+        <entry key="..\:/AndroidDev/KOTLIN/Timetable/app/src/main/res/layout/activity_splash_screen.xml" value="0.20520833333333333" />
         <entry key="..\:/AndroidDev/KOTLIN/Timetable/app/src/main/res/layout/break_item.xml" value="0.4" />
         <entry key="..\:/AndroidDev/KOTLIN/Timetable/app/src/main/res/layout/break_lec_recy_item.xml" value="0.264" />
         <entry key="..\:/AndroidDev/KOTLIN/Timetable/app/src/main/res/layout/dialog_admin_login.xml" value="0.264" />
         <entry key="..\:/AndroidDev/KOTLIN/Timetable/app/src/main/res/layout/fragment_food.xml" value="0.152" />
-        <entry key="..\:/AndroidDev/KOTLIN/Timetable/app/src/main/res/layout/fragment_home.xml" value="0.4" />
-        <entry key="..\:/AndroidDev/KOTLIN/Timetable/app/src/main/res/layout/fragment_links.xml" value="0.264" />
+        <entry key="..\:/AndroidDev/KOTLIN/Timetable/app/src/main/res/layout/fragment_home.xml" value="0.176" />
+        <entry key="..\:/AndroidDev/KOTLIN/Timetable/app/src/main/res/layout/fragment_links.xml" value="0.536" />
         <entry key="..\:/AndroidDev/KOTLIN/Timetable/app/src/main/res/layout/fragment_timetable.xml" value="0.136" />
         <entry key="..\:/AndroidDev/KOTLIN/Timetable/app/src/main/res/layout/free_lec_recy_item.xml" value="0.20520833333333333" />
         <entry key="..\:/AndroidDev/KOTLIN/Timetable/app/src/main/res/layout/item_free_recy.xml" value="0.20416666666666666" />
@@ -32,6 +33,7 @@
         <entry key="..\:/AndroidDev/KOTLIN/Timetable/app/src/main/res/layout/lecture_info_item.xml" value="0.20416666666666666" />
         <entry key="..\:/AndroidDev/KOTLIN/Timetable/app/src/main/res/layout/lecture_item.xml" value="0.4" />
         <entry key="..\:/AndroidDev/KOTLIN/Timetable/app/src/main/res/layout/lecture_lec_recy_item.xml" value="0.536" />
+        <entry key="..\:/AndroidDev/KOTLIN/Timetable/app/src/main/res/layout/list_item.xml" value="0.4" />
         <entry key="..\:/AndroidDev/KOTLIN/Timetable/app/src/main/res/layout/time_recy_item.xml" value="0.2" />
         <entry key="..\:/AndroidDev/KOTLIN/Timetable/app/src/main/res/menu/bottom_nav_menu.xml" value="0.264" />
       </map>

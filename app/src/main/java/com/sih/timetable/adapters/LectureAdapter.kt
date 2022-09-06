@@ -1,9 +1,11 @@
 package com.sih.timetable.adapters
 
 import android.content.Context
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
@@ -31,6 +33,9 @@ class LectureAdapter(private val context: Context, private val list: List<LecInf
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         val current = list[position]
+        Log.d("VALUES", "inside adapter at pos $position ")
+        Log.d("VALUES", "inside adapter is$current ")
+        Log.d("VALUES", "inside adapter is${current.active}")
         if (current.isFree) {
             val tempHolder: FreeHolder = holder as FreeHolder
             //view ka size set with the help of pair ka second number.
@@ -47,6 +52,7 @@ class LectureAdapter(private val context: Context, private val list: List<LecInf
             )
             tempHolder.lecNameTV.text = current.lecName
             tempHolder.lecTimeTV.text = current.startTime + " to " + current.endTime
+            tempHolder.activeIV.visibility = current.active
         }
     }
 
@@ -69,6 +75,7 @@ class LectureAdapter(private val context: Context, private val list: List<LecInf
         var backgroundCL: ConstraintLayout = itemView.findViewById(R.id.cl_background)
         var lecNameTV: TextView = itemView.findViewById(R.id.tv_lectureName)
         var lecTimeTV: TextView = itemView.findViewById(R.id.tv_lectureTime)
+        var activeIV: ImageView = itemView.findViewById(R.id.iv_active)
     }
 
     class FreeHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {

@@ -1,5 +1,6 @@
 package com.sih.timetable.fragment
 
+import android.content.DialogInterface
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
@@ -7,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.fragment.app.Fragment
 import com.google.firebase.database.DataSnapshot
@@ -27,7 +29,22 @@ class LinksFragment : Fragment() {
         adminClicked()
         buttonClicks()
         imageClick()
+        downloadClick()
         return binding.root
+    }
+
+    private fun downloadClick() {
+        binding.ivDownload.setOnClickListener{
+            val builder = AlertDialog.Builder(requireActivity())
+            builder.setMessage("Download latest version of the app?")
+                .setPositiveButton("Yes") { dialog: DialogInterface?, id: Int ->
+                    loadLink(binding.ivDownload,"appLink")
+                }
+                .setNegativeButton("No") { dialog: DialogInterface, id: Int -> dialog.cancel() }
+            val alert = builder.create()
+            alert.show()
+        }
+
     }
 
     private fun imageClick() {
@@ -62,7 +79,7 @@ class LinksFragment : Fragment() {
         loadLink(binding.clGithub, "githubURL")
     }
 
-    private fun loadLink(view: ConstraintLayout, type: String) {
+    private fun loadLink(view: View, type: String) {
         view.setOnClickListener {
             FirebaseDatabase.getInstance().reference.child("Database").child("Links")
                 .child(type).addValueEventListener(object :

@@ -1,51 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/cl_background"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:theme="@style/RoundedBackground"
-        android:minHeight="80dp"
-
         android:layout_marginStart="6dp"
-        android:layout_marginEnd="6dp"
         android:layout_marginTop="3dp"
-        android:layout_marginBottom="3dp">
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="3dp"
+        android:minHeight="80dp"
+        android:theme="@style/RoundedBackground"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_active"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="24dp"
+            android:src="@color/app_blue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <LinearLayout
             android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:layout_marginEnd="24dp"
-            android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:orientation="vertical">
+            app:layout_constraintEnd_toStartOf="@id/iv_active"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/tv_lectureName"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Lecture Name"
                 android:textSize="18sp"
-                android:id="@+id/tv_lectureName"
-                android:theme="@style/Primary"/>
+                android:theme="@style/Primary" />
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:id="@+id/tv_lectureTime"
-                android:text="8:30 to 9:30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
+                android:text="8:30 to 9:30"
                 android:textSize="14sp"
-                android:theme="@style/Secondary"/>
+                android:theme="@style/Secondary" />
         </LinearLayout>
 
 
