@@ -39,10 +39,16 @@ class LinksFragment : Fragment() {
             else if (clicked == 2)
                 Toast.makeText(activity, "Mat maan, sahi me kuch nahi hota", Toast.LENGTH_LONG)
                     .show()
-            else if (clicked >= 3)
+            else if (clicked == 3)
                 Toast.makeText(
                     activity,
                     "LOL me nahi likh raha aur ye if else code. bye",
+                    Toast.LENGTH_LONG
+                ).show()
+            else
+                Toast.makeText(
+                    activity,
+                    "\uD83D\uDD2A",
                     Toast.LENGTH_LONG
                 ).show()
             clicked++

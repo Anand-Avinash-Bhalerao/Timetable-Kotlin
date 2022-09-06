@@ -63,6 +63,7 @@ public class AdminLoginDialog extends AppCompatDialogFragment {
             }else{
                 if(pw.equals("69")){
                     startActivity(new Intent(context, AdminActivity.class));
+                    dialog.dismiss();
                 }
             }
         });

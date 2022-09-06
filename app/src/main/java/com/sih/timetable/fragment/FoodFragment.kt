@@ -40,7 +40,7 @@ class FoodFragment : Fragment() {
     }
 
     private fun loadTheImage(){
-        FirebaseDatabase.getInstance().reference.child("Database").child("messURL").addValueEventListener(object :
+        FirebaseDatabase.getInstance().reference.child("Database").child("Links").child("messURL").addValueEventListener(object :
                 ValueEventListener {
                 override fun onDataChange(snapshot: DataSnapshot) {
                     val url = snapshot.getValue(String::class.java)
