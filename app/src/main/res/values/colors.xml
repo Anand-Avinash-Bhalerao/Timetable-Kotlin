@@ -162,5 +162,7 @@
 
     <color name="background">#ECEFF8</color>
     <color name="topbar">#2c343b</color>
+    <color name="shimmerColor">#C2C2C2</color>
+
 
 </resources>

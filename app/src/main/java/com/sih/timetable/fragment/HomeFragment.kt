@@ -26,7 +26,6 @@ import com.sih.timetable.models.TimeInfo
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 import java.util.*
-import kotlin.collections.ArrayList
 
 
 class HomeFragment : Fragment() {
@@ -42,12 +41,24 @@ class HomeFragment : Fragment() {
     ): View? {
         binding = FragmentHomeBinding.inflate(layoutInflater)
 //        Log.d("LIST_IS", list.toString())
+        startShimmer()
         getTodayDay()
         setSpinner()
         itemClick()
         setTimeRecycler()
         loadLecData()
         return binding.root
+    }
+
+    private fun startShimmer() {
+            binding.recContainer.visibility = View.INVISIBLE
+            binding.shimmerContainer.visibility = View.VISIBLE
+            binding.shimmerLayout.startShimmer()
+    }
+    private fun stopShimmer() {
+        binding.recContainer.visibility = View.VISIBLE
+        binding.shimmerContainer.visibility = View.INVISIBLE
+        binding.shimmerLayout.stopShimmer()
     }
 
     @RequiresApi(Build.VERSION_CODES.O)
@@ -153,7 +164,7 @@ class HomeFragment : Fragment() {
                         lec.add(temp)
                     }
                     var startTime = 8
-
+                    stopShimmer()
                     setTheRecyclerView(lec, dayNumber)
                 }
 
@@ -240,7 +251,14 @@ class HomeFragment : Fragment() {
             val eHr = eTime.split(":")[0].toInt()
             val eMin = eTime.split(":")[1].toInt()
             Log.d("VALUES","start is $sHr : $sMin, end is $eHr : $eMin")
-            if((hr==sHr && min>=sMin)||(hr in (sHr) until eHr)||(hr==eHr && min<=eMin) ){
+            if((hr==sHr && min>=sMin)||(hr in (sHr + 1) until eHr)||(hr==eHr && min<=eMin) ){
+                val f = hr==sHr && min>=sMin
+                val s = hr in (sHr + 1) until eHr
+                val t = hr==eHr && min<=eMin
+                Log.d(
+                    "BOOLS",
+                    "$f $s $t"
+                )
                 Log.d("VALUES","set values is${ans[dayNo][i].active}")
                 var withValues = ArrayList<Int>()
                 withValues.add(dayNo)
